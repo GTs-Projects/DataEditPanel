@@ -1,0 +1,106 @@
+<div class="edit-component-form">
+  <div class="edit-form">
+    <form [formGroup]="editedUserData">
+      <!-- (ngSubmit)="clickToChange()" -->
+      <ul>
+        <li>
+          <label for="editName">Edit Name</label>
+          <input
+            type="text"
+            id="editName"
+            name="editName"
+            formControlName="name"
+          />
+        </li>
+        <li>
+          <label for="editLastName">Edit Last Name</label>
+          <input
+            type="text"
+            id="editLastName"
+            name="editLastName"
+            formControlName="lastName"
+          />
+        </li>
+        <li>
+          <label for="editEmail">Edit Email</label>
+          <input
+            type="email"
+            id="editEmail"
+            name="editEmail"
+            formControlName="email"
+          />
+        </li>
+        <li>
+          <label for="editCompanyName">Edit Company Name</label>
+          <input
+            type="text"
+            id="editCompanyName"
+            name="editCompanyName"
+            formControlName="companyName"
+          />
+        </li>
+        <li>
+          <label for="editRoleInCompany">Edit Role In Company</label>
+          <input
+            type="text"
+            id="editRoleInCompany"
+            name="editRoleInCompany"
+            formControlName="roleInCompany"
+          />
+        </li>
+        <li>
+          <label for="editCompanySize">Edit Company Size</label>
+          <input
+            type="text"
+            id="editCompanySize"
+            name="editCompanySize"
+            formControlName="companySize"
+          />
+        </li>
+        <li *ngIf="userData.active === 1">
+          <label for="editActive">Edit Status</label>
+          <input
+            type="checkbox"
+            checked
+            id="editStatus"
+            name="editStatus"
+            formControlName="active"
+          />
+        </li>
+        <li *ngIf="userData.active === 0">
+          <label for="editActive">Edit Status</label>
+          <input
+            type="checkbox"
+            id="editStatus"
+            name="editStatus"
+            formControlName="active"
+          />
+        </li>
+        <li>
+          <label for="editProvider">Edit Provider</label>
+          <input
+            type="text"
+            id="editProvider"
+            name="editProvider"
+            formControlName="provider"
+          />
+        </li>
+        <li>
+          <label for="editRegDate">Edit Reg.Date</label>
+          <input
+            type="date"
+            id="editRegDate"
+            name="editRegDate"
+            formControlName="regDate"
+          />
+        </li>
+        <li id="edit-buttons">
+          <button type="submit" (click)="onSave()">Save</button>
+          <button (click)="buttonClicked()">Cancel</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+
+

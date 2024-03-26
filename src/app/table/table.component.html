@@ -1,0 +1,38 @@
+<div class="table-content">
+  <ul>
+    <li class="user-id">{{ id }}</li>
+    <li>{{ name }}</li>
+    <li>{{ lastName }}</li>
+    <li class="user-email">{{ email }}</li>
+    <li>{{ companyName }}</li>
+    <li>{{ roleInCompany }}</li>
+    <li>{{ companySize }}</li>
+    <li *ngIf="active === 1">Active</li>
+    <li *ngIf="active === 0">Not Active</li>
+    <li>{{ provider }}</li>
+    <li>{{ regDate }}</li>
+    <li><button>Action</button></li>
+  </ul>
+</div>
+<div class="table-footer">
+  <ul>
+    <li>
+      <button (click)="detailUser()">Details</button>
+    </li>
+    <li>
+      <button (click)="editUser()">Edit</button>
+    </li>
+    <li>
+      <button (click)="resetPassword()">Reset Password</button>
+    </li>
+    <li>
+      <button (click)="bonusSeconds()">Give Bonus Seconds</button>
+    </li>
+    <li>
+      <button (click)="saspendUser()" class="red-button">Suspend</button>
+    </li>
+    <li>
+      <button (click)="deleteUser()" class="red-button">Delete</button>
+    </li>
+  </ul>
+</div>

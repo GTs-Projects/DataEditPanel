@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edit-form {
+  margin: 0 auto;
+  width: 350px;
+  height: max-content;
+
+  ul {
+    list-style: none;
+    margin: auto 0;
+
+    li {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        padding-right: 10px;
+      }
+
+      #editRegDate {
+        width: 163px;
+      }
+
+      input {
+        border: 1px solid black;
+        border-radius: 2px;
+      }
+    }
+
+    #edit-buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 5px;
+      margin-top: 40px;
+
+      button {
+        width: 65px;
+        margin-left: 10px;
+        text-align: center;
+        background-color: darkcyan;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+
+        &:hover {
+          background-color: rgb(12, 76, 76);
+        }
+      }
+    }
+  }
+}

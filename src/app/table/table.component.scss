@@ -1,0 +1,88 @@
+.table-content {
+  margin: 10px 0;
+  background-color: white;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: inherit;
+    margin-bottom: 5px;
+
+    li {
+      display: inline-block;
+      padding: 10px 5px;
+      word-wrap: wrap;
+      width: 100px;
+      border: 1px solid #f2f0f0;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      button {
+        border: none;
+        color: darkcyan;
+        background-color: white;
+        width: 100px;
+        height: 40px;
+        border-radius: 2px;
+
+        &:hover {
+          background-color: rgb(20, 72, 74);
+          color: white;
+        }
+      }
+    }
+
+    .user-id {
+      width: 50px;
+    }
+
+    .user-email {
+      width: 180px;
+    }
+  }
+}
+
+.table-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: inherit;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 10px 10px;
+
+    li {
+      display: inline-block;
+      padding: 5px;
+
+      button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        background-color: darkcyan;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(12, 76, 76);
+        }
+      }
+
+      .red-button {
+        background-color: rgba(139, 0, 0, 0.709);
+
+        &:hover {
+          background-color: rgb(118, 17, 17);
+        }
+      }
+    }
+  }
+}

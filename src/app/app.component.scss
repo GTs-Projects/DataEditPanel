@@ -1,0 +1,45 @@
+.table-container {
+  width: 1150px;
+  height: max-content;
+  margin: 50px auto;
+  background-color: #f2f0f0;
+  border-radius: 10px;
+
+  .table-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .table-head {
+      margin: 10px 0;
+
+      ul {
+        list-style: none;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 5px;
+
+        li {
+          display: inline-block;
+          font-weight: bolder;
+          word-wrap: wrap;
+          width: 100px;
+        }
+
+        .user-id {
+          width: 50px;
+        }
+
+        .user-email {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+
+div {
+  width: 100%;
+}
